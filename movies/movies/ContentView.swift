@@ -9,12 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        List(){
-            movie(movieName: "Kungfupanda", movieChars: ["Master Shifu", "Po", "Tigress"])
-            movie(movieName: "Edge of Tomorrow", movieChars: ["Tom Cruise","Emily Blunt"])
-            movie(movieName: "taken", movieChars: ["Liam Neeson","Maggie Grace"])
-
-
+        List(movies) { movie in
+            movierow(movie : movie)
         }
     }
 }
@@ -26,20 +22,19 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct movie: View {
-    let movieName : String
-    let movieChars : [String]
+struct movierow: View {
+    var movie : Movie
     var body: some View {
         HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/){
-            Image(movieName)
+            Image(movie.title)
                 .resizable()
                 .scaledToFit()
                 .frame(height : 150)
                 .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
             VStack(alignment: .leading){
-                Text(movieName)
+                Text(movie.title)
                     .font(.largeTitle)
-                Text(movieChars.joined(separator: ","))
+                Text(movie.character.joined(separator: ","))
                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
             }
         }.padding(.vertical)

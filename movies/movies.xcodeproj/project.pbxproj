@@ -11,6 +11,7 @@
 		D1C1AC8F259BB09B009EF758 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C1AC8E259BB09B009EF758 /* ContentView.swift */; };
 		D1C1AC91259BB09F009EF758 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1C1AC90259BB09F009EF758 /* Assets.xcassets */; };
 		D1C1AC94259BB09F009EF758 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1C1AC93259BB09F009EF758 /* Preview Assets.xcassets */; };
+		D1C1AC9E259BC54A009EF758 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C1AC9D259BC54A009EF758 /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		D1C1AC90259BB09F009EF758 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1C1AC93259BB09F009EF758 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D1C1AC95259BB09F009EF758 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1C1AC9D259BC54A009EF758 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +38,7 @@
 		D1C1AC80259BB09B009EF758 = {
 			isa = PBXGroup;
 			children = (
+				D1C1AC9C259BC533009EF758 /* Models */,
 				D1C1AC8B259BB09B009EF758 /* movies */,
 				D1C1AC8A259BB09B009EF758 /* Products */,
 			);
@@ -67,6 +70,14 @@
 				D1C1AC93259BB09F009EF758 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D1C1AC9C259BC533009EF758 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D1C1AC9D259BC54A009EF758 /* Movie.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 			files = (
 				D1C1AC8F259BB09B009EF758 /* ContentView.swift in Sources */,
 				D1C1AC8D259BB09B009EF758 /* moviesApp.swift in Sources */,
+				D1C1AC9E259BC54A009EF758 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
