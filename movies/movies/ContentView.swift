@@ -9,8 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        List(movies) { movie in
-            movierow(movie : movie)
+        NavigationView(){
+            List(movies){ movie in
+                NavigationLink(
+                    destination: MovieView(movie: movie),
+                    label: {
+                        movierow(movie: movie)
+                    })
+            }.navigationTitle("Movies")
         }
     }
 }
